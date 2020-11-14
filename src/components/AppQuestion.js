@@ -24,7 +24,7 @@ class AppQuestion extends Component{
     }
 
     initQuestions = () => {
-        getQuestions(10).then(data =>{
+        getQuestions(50).then(data =>{
             this.setState(
                 {
                     listeQuestions:data,
