@@ -131,8 +131,6 @@ class AppQuestion extends Component{
             let reponse = document.getElementsByClassName("reponse");
             for(let i=0;i<reponse.length;i++){
                 if (reponse[i].id != listeQuestions[etape].indexBonneReponse && reponse[i].style.opacity !=="0"){
-                    console.log("réponse[i]: "+reponse[i].id)
-                    console.log("listQuestion: "+listeQuestions[etape].indexBonneReponse)
                     reponse[i].style.opacity="0";
                     this.setState({
                         nbBonus:nbBonus+1               
