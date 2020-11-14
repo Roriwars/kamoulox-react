@@ -43,8 +43,8 @@ class AppQuestion extends Component{
                         body : desc,
                         icon : logo
                     }
-                    
-                    new Notification(title, options);
+
+                    new window.Notification(title, options);
                   
                 }
                 else{ 
