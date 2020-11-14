@@ -44,7 +44,7 @@ class AppQuestion extends Component{
                         icon : logo
                     }
          
-                    new Notification(title, options);
+                    ServiceWorkerRegistration.Notification(title, options);
                   
                 }
                 else{ 
