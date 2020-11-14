@@ -34,7 +34,7 @@ class AppQuestion extends Component{
         })
     }
     
-    showNotification = (title, desc, img) => {
+    showNotification = (title, desc) => {
         if(window.Notification && window.Notification !== "denied"){ 
             Notification.requestPermission(perm => {
                 if(perm === "granted"){
@@ -44,7 +44,7 @@ class AppQuestion extends Component{
                         icon : logo
                     }
          
-                    var notif = new Notification(title, options);
+                    new Notification(title, options);
                   
                 }
                 else{ 
