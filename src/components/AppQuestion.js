@@ -51,6 +51,8 @@ class AppQuestion extends Component{
                     console.log("Notification refusée");
                 }
             })
+        }else{
+            alert(title)
         }
     }
 
