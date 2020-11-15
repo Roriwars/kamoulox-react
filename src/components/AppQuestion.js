@@ -168,16 +168,16 @@ class AppQuestion extends Component{
                         />
                         <div id="score">Score : {score}</div>
                         <div id="bonus" onClick={() => this.maskFalseAns()}>Bonus ! (10Pts)</div>
-                        <button className="bouton" disabled={
+                        <div className="bouton" disabled={
                             reponseCliquer && listeQuestions.length >= etape
                             ? false : true
                         }
-                        onClick={() => this.nextStep(etape)}>Suivant</button>
+                        onClick={() => this.nextStep(etape)}>Suivant</div>
                         </>):(
                             <div>
                                 <div className="titre">Quiz terminé</div>
                                 <div className="texte">Merci !</div>
-                                <button className="bouton" onClick={() => this.initQuestions()}>Nouveau Quiz</button>
+                                <div className="bouton" onClick={() => this.initQuestions()}>Nouveau Quiz</div>
                             </div>
                         )
                     }
